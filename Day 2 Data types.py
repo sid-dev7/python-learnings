@@ -9,12 +9,12 @@ print(f"num = {Num}, Data type = {type(Num)}")
 salary = 11.08
 print(f"salary = {salary}, Data type = {type(salary)}")
 #Print Num and it's datatype (str) single line
-first_name = 'Siddharth'
-last_name = 'chobhe'
+first_name = 'Tejas'
+last_name = 'Mane'
 print(f"first name = {first_name}, last name = {last_name}")
 #Print Num and it's datatype (str) multiline line
 address = """ Shriram Soc, lords Appt,
-MH, Walmiki streat,Mumbai
+MH, Walmiki streat,Islampur
 India"""
 print(f"address = {address}, data type = {type(address)}")
 #Print Num and it's datatype (boolean)
