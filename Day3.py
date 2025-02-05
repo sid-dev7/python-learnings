@@ -80,23 +80,28 @@
 
 #code 7 
 
-def add(P1, P2):
- """
-this function will add parameter
-:param p1: integer first argument 
-:param p2: integer second argumnet
-:return: nothing
-"""
-print("inside the function")
+#def add(P1, P2):
+# """ this function will add parameter
+#:param p1: integer first argument 
+#:param p2: integer second argumnet
+#:return: nothing
+#"""
+#print("inside the function")
 
 #dunder doc->(.__doc__)
 
-print(add.__doc__)
+#print(add.__doc__)
   
-add(10, 40)
+#add(10, 40)
 
-addtion = P1 + P2
+#addtion = P1 + P2
 
-print(f"addition= {addtion}")
+#print(f"addition= {addtion}")
  
 
+#Code 8 
+
+def function_3(num1, num2, num3):
+ print(f"num1 = {num1}, num2 = {num2}, num3 = {num3}")
+
+function_3(10, 30, 40)
