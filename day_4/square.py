@@ -12,13 +12,17 @@
 
 #function alias
 
-def add(p1,p2):
-    return p1+p2
+# def add(p1,p2):
+#     return p1+p2
 
-myAdd = add
+# myAdd = add
 
-addition = add(30,40)
-print(f"addtion of 30 and 40 = {addition}")
+# addition = add(30,40)
+# print(f"addtion of 30 and 40 = {addition}")
 
 # lambda_add = lambda p1, p2: (p1+p2)
 # print(f"lambda add = {lambda_add(10,20)}")
+
+
+lambda_multiplication = lambda p1, p2: (p1*p2)
+print(f"lambda multiplication = {lambda_multiplication(10,20)}")
