@@ -18,4 +18,5 @@ def function1():
     countries = ["India", "US", "Australia"]
     print(countries)
     print(f"type of countries = {type(countries)}")
+    print(f"the number of values = {len(countries)}")
 function1()

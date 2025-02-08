@@ -23,6 +23,6 @@
 # lambda_add = lambda p1, p2: (p1+p2)
 # print(f"lambda add = {lambda_add(10,20)}")
 
-
-lambda_multiplication = lambda p1, p2: (p1*p2)
-print(f"lambda multiplication = {lambda_multiplication(10,20)}")
+# lambda multiplication
+# lambda_multiplication = lambda p1, p2: (p1*p2)
+# print(f"lambda multiplication = {lambda_multiplication(10,20)}")
