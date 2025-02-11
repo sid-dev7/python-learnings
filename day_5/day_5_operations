@@ -27,3 +27,14 @@
 #     print(list_1)
 # function_2()
 
+# pop operator 
+
+# def function_2():
+#     list_1 = ["India", "US", "Canada", "China"]
+
+#     print(list_1)
+
+#     list_1.pop(2)
+
+#     print(list_1)
+# function_2()
