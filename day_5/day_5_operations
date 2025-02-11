@@ -1,0 +1,29 @@
+# Len operator
+# numbers = [10, 20, 30, 40, 50, 60, 70]
+# # number of values in numbers = 7
+# print(f"number of values in numbers = {len(numbers)}")
+
+# append operator
+# def function_1():
+#     list_1 = [10, 20, 30, 40, 50, 60, 70]
+
+#     print(list_1)
+
+# # number of values in numbers = 7
+
+#     list_1.append(80)
+
+#     print(list_1)
+# function_1()
+
+#incert operator
+
+# def function_2():
+#     list_1 = [10, 20, 30, 40, 50, 60, 70]
+
+#     print(list_1)
+
+#     list_1.insert(3, 100)
+#     print(list_1)
+# function_2()
+
