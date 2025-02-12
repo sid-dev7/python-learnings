@@ -39,21 +39,14 @@
 #     print(list_1)
 # function_2()
 
-# remove operator 
-# def function_2():
-#     list_1 = [10, 20, 30, 40, 50, 30, 70]
+# pop operator 
+def function_2():
+    list_1 = [10, 20, 30, 40, 50, 30, 70]
 
-#     list_1.remove(30)
+    list_1.remove(30)
 
-#     print(list_1)
+    print(list_1)
 
-# function_2()
-
-#count operator
-
-numbers = [10, 20, 30, 40, 60, 70, 80, 40, 90, 100, 40, 110,
-40]
-# 40 is repeated 4 times 
-print(f"40 is repeated {numbers.count(40)} times")
+function_2()
 
 
