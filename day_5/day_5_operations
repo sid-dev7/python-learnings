@@ -40,13 +40,38 @@
 # function_2()
 
 # pop operator 
-def function_2():
-    list_1 = [10, 20, 30, 40, 50, 30, 70]
+# def function_2():
+#     list_1 = [10, 20, 30, 40, 50, 30, 70]
 
-    list_1.remove(30)
+#     list_1.remove(30)
 
-    print(list_1)
+#     print(list_1)
 
-function_2()
+# function_2()
+
+
+
+
+
+# function_2()
+
+#count operator
+
+# numbers = [10, 20, 30, 40, 60, 70, 80, 40, 90, 100, 40, 110,
+# 40]
+# # 40 is repeated 4 times 
+# print(f"40 is repeated {numbers.count(40)} times")
+
+
+numbers = [10, 20, 30, 40, 60, 70, 80, 40, 90, 100, 40, 110,
+40]
+# index of 40 = 3
+print(f"index of 40 = {numbers.index(40, 0)}")
+# index of 40 = 7
+print(f"index of 40 = {numbers.index(40, 4)}")
+# index of 40 = 10
+print(f"index of 40 = {numbers.index(40, 8)}")
+# index of 40 = 12
+print(f"index of 40 = {numbers.index(40, 11)}")
 
 
