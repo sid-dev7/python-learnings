@@ -19,6 +19,13 @@ print(f" email address = {person2[2]}")
 
 # function2()
 
+def function3():
+    person1 = {'Name': 'person1', 'address' : 'Pune', 'email address' : 'person1.com'}
+    # print(f"person1 : {person1}, type = {type(person1)}")
+    print(f" person name = {person1['name']}")
+
+function3()           
+
 
 
 
