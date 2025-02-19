@@ -26,4 +26,7 @@ def function2():
         for col in row:
             print(f"value = {col}")
     print(f"-" * 10)
-function2()
+function2()    
+
+
+
