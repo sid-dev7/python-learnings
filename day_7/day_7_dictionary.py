@@ -46,5 +46,16 @@ def function4():
         "salary": 10.50,
         "address" : {
             "city": "Pune"
-        }
+        },
+        "can vote" : True,
+        "email":[
+            "person1@home.com",
+             " Person1@company.com", 
+             "person1@social.com"
+        ]
     }
+    keys = person1.keys()
+    for key in keys:
+        print(f"{key} = {person1[key]}")
+
+function4()
