@@ -31,5 +31,4 @@ def function3():
 # Call the function
 function3()
 
-
-kks 
+#learned about terminal commands and imporatance of running code from terminals
