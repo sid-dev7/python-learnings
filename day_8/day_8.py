@@ -1,3 +1,5 @@
+# map function
+
 def get_square(number):
     return number**2
 def function5():
