@@ -34,10 +34,10 @@ function3()
 
 def function4():
     cars = [
-        {"model": "i20", "company": "hyundai", "price": "10"},
-        {"model": "i00", "company": "hyundai", "price": "15.5"},
-        {"model": "nano","company": "tata", "price": "16.5"},
-        {"model": "i20", "company": "hyundai", "price": "09.0"},
+        {"model": "i20", "company": "hyundai", "price": 10},
+        {"model": "i00", "company": "hyundai", "price": 15.5},
+        {"model": "nano","company": "tata", "price": 16.5},
+        {"model": "i20", "company": "hyundai", "price": 09.0},
     ]
 #price < 10
 
