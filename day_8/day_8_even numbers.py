@@ -32,3 +32,16 @@ def function3():
     print(even_numbers)
 function3()
 
+def function4():
+    cars = [
+        {"model": "i20", "company": "hyundai", "price": "10"},
+        {"model": "i00", "company": "hyundai", "price": "15.5"},
+        {"model": "nano","company": "tata", "price": "16.5"},
+        {"model": "i20", "company": "hyundai", "price": "09.0"},
+    ]
+#price < 10
+
+    affordable_cars = list(filter(lambda car: car['price'] < 10, cars))
+    print(cars)
+    print(affordable_cars)
+function4()
