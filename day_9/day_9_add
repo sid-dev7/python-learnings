@@ -12,9 +12,13 @@ add(10,20, 30)
 # variable lenght argument function (Pass n number of parameters)
 
 def add(*args):
-
     print("inside function add")
-    print(args)
+    print(f"args = {args}, type = {type(args)}")
+    addition = 0
+    for value in args:
+        addition += value
+
+    print(f"addition = {addition}")
 add(10,20, 30)
 add(10, 20)
 add(50, 50, 50, 50)
