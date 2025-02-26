@@ -6,8 +6,8 @@ def function1():
     print(f"inside function1")
     global num
 
-    #modify gloabal num's value
-    
+    #  modify gloabal num's value
+
     num = 500
     print(f"num = {num}")
 function1()

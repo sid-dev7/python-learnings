@@ -1,0 +1,20 @@
+def add(p1,P2):
+    addition = p1+P2
+    print(f"addition = {addition}")
+add(10,20,)
+
+
+def add(p1,P2,p3):
+    addition = p1+P2+p3
+    print(f"addition = {addition}")
+add(10,20, 30)
+
+# variable lenght argument function (Pass n number of parameters)
+
+def add(*args):
+
+    print("inside function add")
+    print(args)
+add(10,20, 30)
+add(10, 20)
+add(50, 50, 50, 50)
