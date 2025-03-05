@@ -7,6 +7,5 @@ def execute(function):
     print('-'* 40)
     print(function(20,10))
     print('-'* 40)
-
 execute (add)
 execute(subtract)
