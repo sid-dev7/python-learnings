@@ -1,0 +1,12 @@
+def log(function):
+    def inner(p1, p2):
+        print("_" * 40)
+        function(p1,p2)
+        print("_" * 40)
+    return inner
+
+@log
+def add(p1, p2):
+    print(f"addition = {p1 +p2}")
+
+add(10, 20)
