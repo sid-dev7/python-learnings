@@ -35,6 +35,6 @@ def log(function):
 @log
 def add(p1, p2):
     print(f"addition = {p1+p2}")
-add(10,20)
+add(10,0)
     
  
