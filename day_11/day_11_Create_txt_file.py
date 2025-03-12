@@ -14,4 +14,15 @@ def write_file():
     #close the file
     file.close()
 
-write_file()
+# write_file()
+
+def append_file():
+    # mode: a
+    # - previous contents will be presisted
+    file = open("myfile.text","a")
+
+    # perform the operation
+    file.write("new content written")
+    # close the file
+    file.close()
+# append_file()
