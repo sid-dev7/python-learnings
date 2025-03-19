@@ -27,3 +27,17 @@ def append_file():
     # close the file
     # file.close()
 append_file()
+
+def read_file_():
+    # open file in read mode
+    file = open('myfile.txt','r')
+    # perform operations
+
+    data = file.read()
+
+    print(f" data = {data}")
+
+    #close the file
+
+    file.close()
+read_file_()
