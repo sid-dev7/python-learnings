@@ -22,7 +22,8 @@ def append_file():
     file = open("myfile.text","a")
 
     # perform the operation
-    file.write("new content written")
+    # file.write("new content written")
+    file.write("I love watching movies")
     # close the file
-    file.close()
-# append_file()
+    # file.close()
+append_file()
