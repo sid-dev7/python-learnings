@@ -10,9 +10,9 @@ def log(function):
         file.write("\n")
         file.write(f"inside function {function.__name__}")
         file.write("\n")
-        file.write(args)
+        file.write(f"{args}")
         file.write("\n")
-        function(*args, **kwargs)
+        function(f"{kwargs}")
         file.write("\n")
         file.write("-"*80)
         #close the file
@@ -20,6 +20,7 @@ def log(function):
         function(*args, **kwargs)
     
     return inner
+@log
 def add(p1,p2):
     print(f"addition = {p1+ p2}")
 add(10,20)
