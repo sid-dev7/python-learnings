@@ -31,5 +31,12 @@ p1.address = "Pune"
 p1.print_info()
 p1.can_vote()
 # initializer method
-#removed change
+# removed change
+
+
+# initializer (constructor)
+# de-initializer (destructor)
+# setter (mutator)
+# getter (inspector)
+# facilitator (utility)
 
