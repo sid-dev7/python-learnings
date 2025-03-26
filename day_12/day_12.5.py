@@ -3,6 +3,12 @@ class person:
     This class represents a person object..
     
     """
+    def __init__(self):
+        print("inside __init__")
+        self.name = ""
+        self.address = ""
+        self.age = 0
+
     def print_info(self):
         print(f"name:{self.name}")
         print(f"address: {self.address}")
@@ -18,3 +24,7 @@ p1.age = 20
 p1.address = "Pune"
 p1.print_info()
 p1.can_vote()
+
+
+#change
+
