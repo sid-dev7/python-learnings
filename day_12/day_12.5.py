@@ -4,6 +4,12 @@ class person:
     
     """
     def __init__(self):
+
+        """
+        initializer method
+        - gets calledautomatically for every object of this class
+        - similar to constructor
+        """
         print("inside __init__")
         self.name = ""
         self.address = ""
@@ -25,6 +31,5 @@ p1.address = "Pune"
 p1.print_info()
 p1.can_vote()
 
-
-#change
+#removed change
 
