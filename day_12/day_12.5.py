@@ -30,6 +30,6 @@ p1.age = 20
 p1.address = "Pune"
 p1.print_info()
 p1.can_vote()
-
+# initializer method
 #removed change
 
