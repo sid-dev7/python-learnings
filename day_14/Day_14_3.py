@@ -34,5 +34,8 @@ class House:
         print(f"owner = {self.__owner}")
         print("-"*40)
 
+p1 = person('person1','pune','MH','India',10)
+print(p1.__dict__)
+p1.print_info()
 # h1 = House('owner1','mumbai', 'MH', 'India')
 # h1.print_info()
