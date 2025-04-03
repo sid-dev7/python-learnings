@@ -16,3 +16,12 @@ p1.print_info()
 p2 = person(name='person2', address ='Mumbai', age=27)
 
 p2.print_info()
+
+
+class car:
+    def __init__(self, model, company, price):
+        self.model = model
+        self.company = company
+        self.price = price 
+i10 = car('i10', 'hynudai', 5.5)
+       
