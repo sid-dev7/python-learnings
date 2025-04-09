@@ -23,7 +23,7 @@ class Car(Vehicle):
         print(f"model: {self._model}")
         print(f"company: {self._company}")
         print(f" price = {self._price}")
-        print(f"fule type = {self._fuel_type}")
+        print(f"fuel type = {self._fuel_type}")
 
 b1 = Bike('activa','honda',75000)
 b1.print_info()
