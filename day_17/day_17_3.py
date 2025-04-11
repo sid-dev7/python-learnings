@@ -13,9 +13,14 @@ try:
      divide(10,5)
      read_file()
 #except block
+#handles the exception raised in divide funtion
+#specific except block
 except ZeroDivisionError:
     print(f"zero division exception raised")
+
+#specific except block
 except FileNotFoundError:
       print(f" file not found exception")
+#generic except block
 except:
       print("generic exception raised")
