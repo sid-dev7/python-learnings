@@ -2,7 +2,7 @@ def divide (n1,n2):
         # exception can be generated
         division = n1/n2
         print(f"division = {division}")
-
+        
 def read_file():
     file = open("./myfile.txt", "r")
     data = file.read()
