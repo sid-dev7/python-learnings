@@ -6,5 +6,4 @@ class Person:
         print(f"name = {self.__name}")
         print((f"age  = {self.__age}"))
 Person = Person('person 1', 10)
-
 Person.print_info()
