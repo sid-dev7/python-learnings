@@ -81,26 +81,26 @@
 
 #code 7 
 
-def add(P1, P2):
-    """ this function will add parameter.
+# def add(P1, P2):
+#     """ this function will add parameter.
 
-    :param p1: integer, first argument 
-    :param p2: integer, second argumnet
-    :return: nothing
-    """
-    print("inside the function")
-    addition = P1 + P2
-    print(f"addition = {addition}")
+#     :param p1: integer, first argument 
+#     :param p2: integer, second argumnet
+#     :return: nothing
+#     """
+#     print("inside the function")
+#     addition = P1 + P2
+#     print(f"addition = {addition}")
 
 # dunder doc->(.__doc__), prints data in """" --"""" is caled docstring
 
-print(add.__doc__) 
+# print(add.__doc__) 
   
 # add(10, 40)
 
 
-#Code 8 
+# Code 8 
 
-# def function_3(num1, num2, num3):
-#  print(f"num1 = {num1}, num2 = {num2}, num3 = {num3}")
-# function_3(10, 30, 40)
+def function_3(num1, num2, num3):
+ print(f"num1 = {num1}, num2 = {num2}, num3 = {num3}")
+function_3(10, 30, 40)
