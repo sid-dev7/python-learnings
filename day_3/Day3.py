@@ -70,34 +70,34 @@
 
 # def add(P1, P2):
 
-#  addition = P1 + P2
+#     addition = P1 + P2
 #  print(f"Addtion = {addition}")
 
 # add(10,40)
 # add(10.5,40.67)
+
 # add("Hello","Sid")
 # add(True,False)
 
 #code 7 
 
-#def add(P1, P2):
-# """ this function will add parameter
-#:param p1: integer first argument 
-#:param p2: integer second argumnet
-#:return: nothing
-#"""
-#print("inside the function")
+def add(P1, P2):
+    """ this function will add parameter.
 
-#dunder doc->(.__doc__)
+    :param p1: integer, first argument 
+    :param p2: integer, second argumnet
+    :return: nothing
+    """
+    print("inside the function")
+    addition = P1 + P2
+    print(f"addition = {addition}")
 
-#print(add.__doc__)
+# dunder doc->(.__doc__), prints data in """" --"""" is caled docstring
+
+print(add.__doc__) 
   
-#add(10, 40)
+# add(10, 40)
 
-#addtion = P1 + P2
-
-#print(f"addition= {addtion}")
- 
 
 #Code 8 
 
