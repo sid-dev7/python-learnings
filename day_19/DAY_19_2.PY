@@ -15,8 +15,8 @@ def function1():
     print("-"*80)
     a3 = np.array([10, 20, 30, 40, 50], dtype=np.int16)
     print(f"a1 = {a3}, type = {type(a3)}")
-    print(f" item size = {a3.itemsize}")
-    print(f"dataype ={a3.dtype}")
-    print(f" total memory = {a3.itemsize*a3.size}")
+    print(f"item size = {a3.itemsize}")
+    print(f"dataype = {a3.dtype}")
+    print(f"total memory = {a3.itemsize*a3.size}")
 
 function1()
