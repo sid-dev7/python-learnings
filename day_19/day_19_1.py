@@ -28,13 +28,13 @@
 #     for country in countries:
 #         print(country)
 # function2()
-
-# def function3():
-#     numbers1 = [10, 20, 30, 40]
-#     numbers2 = [50, 60, 70, 80]
-
-#     numbers3 = numbers1 + numbers2  
-#     print(numbers1)
-#     print(numbers2)
-#     print(numbers3)
-# function3()
+import sys
+def function3():
+    numbers1 = [10, 20, 30, 40]
+    numbers2 = [50, 60, 70, 80]
+    numbers3 = numbers1 + numbers2  
+    print(numbers1)
+    print(numbers2)
+    print(numbers3)
+    print(f"item size = {sys.getsizeof(numbers3[0])}")
+function3()
