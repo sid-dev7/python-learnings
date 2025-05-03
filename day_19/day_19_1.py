@@ -29,12 +29,12 @@
 #         print(country)
 # function2()
 
-def function3():
-    numbers1 = [10, 20, 30, 40]
-    numbers2 = [50, 60, 70, 80]
+# def function3():
+#     numbers1 = [10, 20, 30, 40]
+#     numbers2 = [50, 60, 70, 80]
 
-    numbers3 = numbers1 + numbers2  
-    print(numbers1)
-    print(numbers2)
-    print(numbers3)
-function3()
+#     numbers3 = numbers1 + numbers2  
+#     print(numbers1)
+#     print(numbers2)
+#     print(numbers3)
+# function3()
