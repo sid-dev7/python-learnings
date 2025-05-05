@@ -1,4 +1,4 @@
-# collection
+# what is collection
 # Array of collection
 
 # list :> []
