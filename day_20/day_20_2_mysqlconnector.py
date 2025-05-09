@@ -9,7 +9,7 @@ def select_records():
     # connect to the databse
     connection = mysql.connector.connect(host='localhost', user='root', password= 'admin123', database= 'personsdb')
     # create a query
-    query = "select id, name, address, age from perosn"
+    query = "select id, name, address, age from person"
 
     # get the cursur(in-memory table)
     cursor = connection.cursor()
@@ -23,6 +23,11 @@ def select_records():
     #  process the result
     print(result)
 
+    for row in result:
+        print(f"id = {row[0]}")
+        print(f"name = {row[1]}")
+        print(f"age = {row[2]}")
+        print("-"*80)
     #close the cursor 
 
     cursor.close()
