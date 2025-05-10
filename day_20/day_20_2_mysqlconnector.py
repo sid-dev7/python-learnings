@@ -1,7 +1,6 @@
 # command to for mysql connector
 # pip install mysql-connector-python
 
-
 # frist sql to python 
 
 import mysql.connector
