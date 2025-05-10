@@ -12,7 +12,7 @@ CREATE TABLE students (
     grade VARCHAR(10)
 );
 
-#📌 Insert Data
+# 📌 Insert Data
 INSERT INTO students (name, age, grade)
 VALUES ('Alice', 14, '8th'), ('Bob', 15, '9th');
 
@@ -21,37 +21,37 @@ SELECT * FROM students;
 SELECT name, grade FROM students WHERE age > 14;
 
 🔹 2. Data Manipulation
-📌 Update Data
+# 📌 Update Data
 UPDATE students SET grade = '10th' WHERE name = 'Bob';
 
-📌 Delete Data
+# 📌 Delete Data
 DELETE FROM students WHERE name = 'Alice';
 
-📌 Use Aliases
+# 📌 Use Aliases
 SELECT name AS student_name FROM students;
 
 🔹 3. SQL Clauses
-📌 WHERE, AND, OR, NOT
+# 📌 WHERE, AND, OR, NOT
 SELECT * FROM students WHERE age > 14 AND grade = '10th';
 
-📌 ORDER BY, LIMIT
+# 📌 ORDER BY, LIMIT
 SELECT * FROM students ORDER BY age DESC LIMIT 2;
 
-📌 LIKE, IN, BETWEEN
+# 📌 LIKE, IN, BETWEEN
 SELECT * FROM students WHERE name LIKE 'B%';
 SELECT * FROM students WHERE grade IN ('8th', '10th');
 SELECT * FROM students WHERE age BETWEEN 13 AND 15;
 
 🔹 4. Functions
-📌 COUNT, AVG, SUM, MIN, MAX
+# 📌 COUNT, AVG, SUM, MIN, MAX
 SELECT COUNT(*) FROM students;
 SELECT AVG(age) FROM students;
 
-📌 GROUP BY + HAVING
+# 📌 GROUP BY + HAVING
 SELECT grade, COUNT(*) AS total FROM students GROUP BY grade HAVING COUNT(*) > 1;
 
 🔹 5. JOINs (Multiple Tables)
-📌 Create Another Table
+# 📌 Create Another Table
 CREATE TABLE classes (
     class_id INT AUTO_INCREMENT PRIMARY KEY,
     grade VARCHAR(10),
@@ -60,18 +60,18 @@ CREATE TABLE classes (
 INSERT INTO classes (grade, teacher)
 VALUES ('8th', 'Mr. Smith'), ('9th', 'Ms. Linda'), ('10th', 'Mr. John');
 
-📌 INNER JOIN
+# 📌 INNER JOIN
 SELECT students.name, students.grade, classes.teacher
 FROM students
 INNER JOIN classes ON students.grade = classes.grade;
 
-📌 LEFT JOIN / RIGHT JOIN
+# 📌 LEFT JOIN / RIGHT JOIN
 SELECT s.name, s.grade, c.teacher
 FROM students s
 LEFT JOIN classes c ON s.grade = c.grade;
 
 🔹 6. Constraints & Keys
-📌 UNIQUE, NOT NULL, DEFAULT
+# 📌 UNIQUE, NOT NULL, DEFAULT
 CREATE TABLE users (
     user_id INT AUTO_INCREMENT PRIMARY KEY,
     username VARCHAR(100) UNIQUE,
