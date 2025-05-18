@@ -21,14 +21,14 @@ def get_products():
     products = []
     for (id,title, description, price) in result:
         product = {
-            "id" : id
-            "title" : title
-            "description" : description
+            "id" : id,
+            "title" : title,
+            "description" : description,
             "price": price            
         }
         products.append(product)
     connection.close()
-    return jsonify(result)
+    return jsonify(product)
 
 
 #start the server on port 4000
