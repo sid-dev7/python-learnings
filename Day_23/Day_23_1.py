@@ -1,6 +1,11 @@
 
-from flask import Flask, jsonify
+from flask import Flask, jsonify, render_template
 app = Flask(__name__)
+
+@app.route('/signin', methods=['GET'])
+def get_root():
+    # get the file named index.html from templates directory
+    return render_template('index.html')
 
 @app.route('/signin', methods=['GET'])
 def get_signin():
