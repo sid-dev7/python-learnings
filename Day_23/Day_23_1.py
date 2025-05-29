@@ -1,34 +1,33 @@
+
 from flask import Flask, jsonify
-#create a server
 app = Flask(__name__)
 
-@app.route('/signin', methods=['Get'])
+@app.route('/signin', methods=['GET'])
 def get_signin():
-    return"signin"
+    return "signin"
 
-@app.route('/signup', methods=['Get'])
+@app.route('/signup', methods=['GET'])
 def get_signup():
-    return"signup"
+    return "signup"
 
-@app.route('/home', methods=['Get'])
-def geth_home():
-    return"home"
+@app.route('/home', methods=['GET'])
+def get_home():
+    return "home"
 
-@app.route('/chart', methods=['Get'])
+@app.route('/chart', methods=['GET'])
 def get_chart():
-    return"chart"
+    return "chart"
 
-@app.route('/about_us', methods=['Get'])
+@app.route('/about_us', methods=['GET'])
 def get_about_us():
-    return"about_us"
+    return "about_us"
 
-@app.route('/contact_us', methods=['Get'])
+@app.route('/contact_us', methods=['GET'])
 def get_contact_us():
-    return"contact_us"
+    return "contact_us"
 
-@app.route('/help', methods=['Get'])
+@app.route('/help', methods=['GET'])
 def get_help():
-    return"help"
+    return "help"
 
-#start server on port 4000
-app.run(host='0.0.0.0',port=4000,debug=True)
+app.run(host='0.0.0.0', port=4000, debug=True)
