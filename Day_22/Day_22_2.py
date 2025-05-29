@@ -10,12 +10,12 @@ app = Flask(__name__)
 @app.route('/', methods = ["GET"])
 def root():
     return'<h1 style ="color: red">welcome to my webserver sid</h1>'
-@app.route('/product', method=['GET'])
+@app.route('/product', methods =['GET'])
 
 
 def get_products():
-    connection = mysql.connector.connect(host ='localhost', user='root',password ='admin123',database='personsdb')
-    query = 'select id, title, description, price of product'
+    connection = mysql.connector.connect(host ='localhost', user='root',password ='xxxx',database='personsdb')
+    query = 'SELECT id, title, description, price FROM product'
     cursor = connection.cursor()
     result = cursor.fetchall()
     products = []
