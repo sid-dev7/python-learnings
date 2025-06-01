@@ -9,8 +9,8 @@ def get_root():
 
 @app.route('/signin', methods=['GET'])
 def get_signin():
+    # return render_template("signin.html")
     return "signin"
-
 @app.route('/signup', methods=['GET'])
 def get_signup():
     return "signup"
