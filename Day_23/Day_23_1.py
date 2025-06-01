@@ -2,7 +2,7 @@
 from flask import Flask, jsonify, render_template
 app = Flask(__name__)
 
-@app.route('/signin', methods=['GET'])
+@app.route('/', methods=['GET'])
 def get_root():
     # get the file named index.html from templates directory
     return render_template('index.html')
@@ -11,6 +11,7 @@ def get_root():
 def get_signin():
     # return render_template("signin.html")
     return "signin"
+
 @app.route('/signup', methods=['GET'])
 def get_signup():
     return "signup"
