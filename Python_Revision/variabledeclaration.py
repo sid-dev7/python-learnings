@@ -1,7 +1,7 @@
 # declare variable
 num = 500
-# print(num)
-# print(type(num))
+print(num)
+print(type(num))
 
 # use offormated string
 
@@ -20,3 +20,11 @@ print(f" Name = {Name}, datatype ={type(Name)}")
 address = """birla tower,flat no:5,
 Mumbai, 4100556"""
 print(f"address = {address}, datatype = {type(address)}")
+
+# bool
+
+canvote = True
+
+print(f"canvote = {canvote}, datatype = {type(canvote)}")
+
+
