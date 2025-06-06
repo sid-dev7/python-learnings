@@ -156,6 +156,3 @@ x = 10
 print(id(x))
 ```
 
----
-
-Would you like this as a downloadable `.md` file to upload directly to GitHub?
