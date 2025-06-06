@@ -28,3 +28,10 @@ print(f"power={Power}, datatype ={type(Power)}")
 # remainder (modulus)
 mod = 10 % 2
 print(f"mod ={mod}")
+
+# String operator
+
+print("hello"*5)
+
+# string + operatoer => concatination
+print("Hello"+ "world")
