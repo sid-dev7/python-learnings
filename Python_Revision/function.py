@@ -17,3 +17,18 @@ def add(p1,p2):
     addition = p1+p2
     print(f"addition = {addition}")
 add(10,30)
+
+def add(p1,p2):
+    print('inside add function')
+    addition = p1+p2
+    print(f"addition = {addition}")
+add("hey","hello")
+
+
+def function3():
+    """
+    Documentation string (docstring)
+    this is a test function
+    """
+    print("This is inside function3")
+print(function3.__doc__)
