@@ -1,13 +1,31 @@
 # logical operators
 
 # and => &&
-age =10
-#  age >20 and age < 60
+# True and True => True
+# True and False => False
+# False and False => False
+# False and False => False
 
-if age > 20:
+age = 100
+#  age >20 and age < 60
+if (age > 20) and (age<60):
     print(f"inside if block")
-    print(f"age is greater than 20")
+    print(f"age valid for employee")
 else:
     print(f"inside if block")
-    print("age is less than 60")
+    print("age not valid for employee")
+
 # or => //
+# and => &&
+# True or True => True
+# True or False => True
+# False or False => True
+# False or False => False
+
+#  age >20 or age < 60
+if (age > 20) or (age<60):
+    print(f"inside if block")
+    print(f"age valid for employee")
+else:
+    print(f"inside if block")
+    print("age not valid for employee")
