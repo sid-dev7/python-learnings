@@ -38,4 +38,9 @@ def function3():
     this is a test function
     """
     print("This is inside function3")
-# print(function3.__doc__)
+print(function3.__doc__)
+
+# emty function
+def emty_function():
+    pass
+emty_function()
