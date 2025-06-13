@@ -9,3 +9,10 @@ print(f"s2 intersection s1 = {s2.intersection(s1)}")
 
 print(f"s1 difference s2 = {s1.difference(s2)}")
 print(f"s2 difference s1 = {s2.difference(s1)}")
+
+def function2():
+    # imutable
+    s1 = frozenset([10,20,30,10,20,30,10,20,30,])
+    print(f"s1={s1}), type = {type(s1)}")
+
+function2()
