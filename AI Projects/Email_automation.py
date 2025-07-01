@@ -2,7 +2,7 @@ import pandas as pd
 import win32com.client as win32
 
 # Load Excel file
-file_path = 'emails.xlsx'  # Update with your actual file path
+file_path = 'D:\\Python\\python-learnings\\AI Projects\\emails.xlsx'  # Update with your actual file path
 df = pd.read_excel(file_path)
 
 # Initialize Outlook
