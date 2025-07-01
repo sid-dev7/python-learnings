@@ -83,7 +83,4 @@ def mix_args(*args, **kwargs):
     print("Kwargs:", kwargs)
 
 mix_args(1, 2, 3, name="Sid", role="PM")
-```
-
----
 
