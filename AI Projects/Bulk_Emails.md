@@ -135,7 +135,7 @@ server.quit()
 ---
 
 ## Screenshot / Visual
-![Automated Email System Illustration](https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80)
+![Automated Email System Illustration](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.gosquared.com%2Fblog%2Femail-automation&psig=AOvVaw0MWgyYr29A8JNcNd7gj6NA&ust=1754411116306000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCMCg4fXI8Y4DFQAAAAAdAAAAABAE)    
 
 ---
 
