@@ -4,7 +4,9 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
 # Read the Excel file (update the path if needed)
-df = pd.read_excel('emails.xlsx')
+df = pd.read_excel('d:/Python/python-learnings/AI Projects/emails.xlsx')
+df.columns = [col.strip().lower() for col in df.columns]
+print('Excel columns:', df.columns.tolist())
 
 # SMTP server details (example for Gmail)
 SMTP_SERVER = 'smtp.gmail.com'
@@ -12,12 +14,12 @@ SMTP_PORT = 587
 
 # Loop through each row in the Excel file
 for index, row in df.iterrows():
-    to_email = row['To']
-    from_email = row['From']
+    to_email = row['to']
+    from_email = row['from']
+    subject = row['subject']
+    body = row['note']
     # Prompt for password or use a secure method to get it
     password = input(f"Enter password for {from_email}: ")
-    subject = 'Test Bulk Email'
-    body = 'This is a test email sent via Python script.'
 
     # Create the email message
     msg = MIMEMultipart()
