@@ -135,7 +135,7 @@ server.quit()
 ---
 
 ## Screenshot / Visual
-![Automated Email System Illustration](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.gosquared.com%2Fblog%2Femail-automation&psig=AOvVaw0MWgyYr29A8JNcNd7gj6NA&ust=1754411116306000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCMCg4fXI8Y4DFQAAAAAdAAAAABAE)    
+![Automated Email System Illustration](https://github.com/sid-dev7/python-learnings/blob/main/AI%20Projects/Email.pic.png)    
 
 ---
 
