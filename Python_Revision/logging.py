@@ -15,4 +15,11 @@ def divide(p1,p2):
     division = p1/p2
     print(f' division= {division}')
     print("-"*40)
-divide(10,0)
+divide(10,1)
+
+
+def log(function):
+    print(f"function name = {function.__name__}")
+
+log(add)
+log(divide)
