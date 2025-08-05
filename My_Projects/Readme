@@ -31,6 +31,7 @@ GitHub is a cloud-based hosting service that lets you manage Git repositories. I
 1. **Clone a repository:**
    ```bash
    git clone <repository-url>
+    creates a local copy of a project that already exists remotely. The clone includes all the project's files, history, and branches.
    ```
 2. **Check status:**
    ```bash
