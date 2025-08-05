@@ -30,30 +30,41 @@ GitHub is a cloud-based hosting service that lets you manage Git repositories. I
 ## Basic Git Workflow
 1. **Clone a repository:**
    ```bash
-   git clone <repository-url>
-    creates a local copy of a project that already exists remotely. The clone includes all the project's files, history, and branches.
+    git clone <repository-url>
+    Creates a local copy of a project that already exists remotely. The clone includes all the project's files, history, and branches.
    ```
 2. **Check status:**
    ```bash
    git status
+
+   Shows the status of changes as untracked, modified, or staged.
    ```
 3. **Add changes:**
    ```bash
-   git add <file>
+    git add <file>
+    tages a change. Git tracks changes to a developer's codebase, but it's necessary to stage and take a snapshot of the changes to include them in the project's history. This command performs staging, the first part of that two-step process. Any changes that are staged will become a part of the next snapshot and a part of the project's history. Staging and committing separately gives developers complete control over the history of their project without changing how they code and work.
+
    ```
 4. **Commit changes:**
    ```bash
    git commit -m "Your message"
+
+   Saves the snapshot to the project history and completes the change-tracking process. In short, a commit functions like taking a photo. Anything that's been staged with git add will become a part of the snapshot with git commit
    ```
 5. **Push to GitHub:**
    ```bash
    git push
+   Updates the remote repository with any commits made locally to a branch.
    ```
 6. **Pull latest changes:**
    ```bash
    git pull
+   updates the local line of development with updates from its remote counterpart. Developers use this command if a teammate has made commits to a branch on a remote, and they would like to reflect those changes in their local environment.
    ```
-
+7. **Git Merg:**
+    merges lines of development together. This command is typically used to combine changes made on two distinct branches. For example, a developer would merge when they want to combine changes from a feature branch into the main branch for deployment.
+8.  **Git Init:**
+    Initializes a brand new Git repository and begins tracking an existing directory. It adds a hidden subfolder within the existing directory that houses the internal data structure required for version control.
 ---
 
 ## Useful Resources
