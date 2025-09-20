@@ -3,180 +3,231 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Siddharth Chobhe | Portfolio</title>
+  <title>Siddharth Chobhe Portfolio</title>
   <style>
-    * {margin: 0; padding: 0; box-sizing: border-box; font-family: 'Arial', sans-serif; scroll-behavior: smooth;}
-    body {background: #f4f4f4; color: #333; line-height: 1.6;}
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
 
-    /* Navbar */
-    nav {
-      position: sticky;
+    body {
+      background-color: #f4f6f8;
+      color: #333;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      position: fixed;
       top: 0;
-      background: #111;
-      color: #fff;
-      padding: 15px 20px;
+      width: 100%;
+      background: #1f2937;
+      color: white;
+      padding: 1rem 0;
+      z-index: 1000;
+    }
+
+    header nav {
       display: flex;
       justify-content: center;
       gap: 30px;
-      z-index: 1000;
     }
-    nav a {
-      color: #fff;
+
+    header nav a {
+      color: white;
       text-decoration: none;
       font-weight: bold;
       transition: color 0.3s;
     }
-    nav a:hover {color: #1da1f2;}
 
-    /* Hero Section */
-    header {
+    header nav a:hover {
+      color: #38bdf8;
+    }
+
+    .hero {
       display: flex;
       align-items: center;
       justify-content: center;
+      min-height: 100vh;
+      padding-top: 80px;
+      background: linear-gradient(to right, #f8fafc, #e2e8f0);
+    }
+
+    .hero-content {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+      max-width: 1200px;
+      padding: 20px;
       flex-wrap: wrap;
-      background: linear-gradient(120deg, #111, #333);
-      color: #fff;
-      padding: 60px 20px;
-      text-align: left;
     }
-    .hero-content {max-width: 600px; margin-left: 30px;}
-    .hero-content h1 {font-size: 3rem; animation: fadeInDown 1.2s ease-in-out;}
-    .hero-content p {font-size: 1.2rem; margin-top: 10px; animation: fadeInUp 1.2s ease-in-out;}
 
-    /* Profile Image */
-    .profile-pic {
-      width: 200px;
-      height: 200px;
+    .profile-pic-container {
+      width: 250px;
+      height: 250px;
       border-radius: 50%;
+      overflow: hidden;
+      border: 8px solid #38bdf8;
+      flex-shrink: 0;
+    }
+
+    .profile-pic-container img {
+      width: 100%;
+      height: 100%;
       object-fit: cover;
-      border: 5px solid #fff;
-      animation: zoomIn 1.5s ease;
     }
 
-    /* Sections */
+    .hero-text h1 {
+      font-size: 2.5rem;
+      color: #1f2937;
+    }
+
+    .hero-text p {
+      font-size: 1.2rem;
+      color: #4b5563;
+    }
+
     section {
-      max-width: 900px;
-      margin: 60px auto;
-      padding: 20px;
-      background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-      animation: fadeInUp 1s ease-in-out;
-    }
-    h2 {margin-bottom: 20px; color: #111; text-align: center;}
-    .skills ul, .experience ul, .articles ul {list-style: none; padding: 0;}
-    .skills li, .experience li, .articles li {
-      background: #eee;
-      padding: 10px;
-      margin-bottom: 10px;
-      border-radius: 5px;
-      transition: transform 0.3s;
-    }
-    .skills li:hover, .experience li:hover, .articles li:hover {
-      transform: translateX(5px);
-      background: #ddd;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 80px 20px;
     }
 
-    /* Footer */
-    footer {
+    h2 {
       text-align: center;
-      padding: 20px;
-      background: #111;
-      color: #fff;
+      margin-bottom: 40px;
+      color: #1f2937;
+      font-size: 2rem;
+    }
+
+    .about-text {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      font-size: 1rem;
+    }
+
+    .about-text h3 {
+      margin-top: 20px;
+      color: #2563eb;
+    }
+
+    .about-text ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .about-text ul li::before {
+      content: "\2022";
+      color: #38bdf8;
+      font-weight: bold;
+      display: inline-block;
+      width: 1em;
+    }
+
+    footer {
+      background: #1f2937;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
       margin-top: 40px;
     }
-    .links a {margin: 0 10px; font-size: 1.2rem; color: #fff;}
-    .links a:hover {color: #1da1f2;}
 
-    /* Animations */
-    @keyframes fadeInDown {
-      from {opacity: 0; transform: translateY(-20px);}
-      to {opacity: 1; transform: translateY(0);}
-    }
-    @keyframes fadeInUp {
-      from {opacity: 0; transform: translateY(20px);}
-      to {opacity: 1; transform: translateY(0);}
-    }
-    @keyframes zoomIn {
-      from {transform: scale(0.8); opacity: 0;}
-      to {transform: scale(1); opacity: 1;}
-    }
-
-    /* Responsive */
     @media(max-width: 768px) {
-      header {flex-direction: column; text-align: center;}
-      .hero-content {margin-left: 0; margin-top: 20px;}
-      .profile-pic {width: 150px; height: 150px;}
+      .hero-content {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .profile-pic-container {
+        width: 200px;
+        height: 200px;
+      }
     }
   </style>
 </head>
 <body>
-  <!-- Navigation Bar -->
-  <nav>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#experience">Experience</a>
-    <a href="#articles">Articles</a>
-    <a href="#contact">Contact</a>
-  </nav>
+  <!-- Navigation -->
+  <header>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#articles">Articles</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
   <!-- Hero Section -->
-  <header>
-    <img src="profile.jpg" alt="Siddharth Chobhe" class="profile-pic">
+  <section class="hero" id="hero">
     <div class="hero-content">
-      <h1>Siddharth Chobhe</h1>
-      <p>Project Manager | Aspiring Product Manager | AWS & Python Enthusiast</p>
+      <div class="profile-pic-container">
+        <img src="profile.jpg" alt="Siddharth Chobhe">
+      </div>
+      <div class="hero-text">
+        <h1>Siddharth Chobhe</h1>
+        <p>Project Manager | Product Owner | AWS Enthusiast</p>
+      </div>
     </div>
-  </header>
+  </section>
 
   <!-- About Section -->
   <section id="about">
     <h2>About Me</h2>
-    <p style="text-align:center;">I am a passionate Project Management professional with expertise in Agile/Scrum, AWS, and Python development. I enjoy building efficient systems, automating workflows, and sharing my technical knowledge through Medium articles.</p>
-  </section>
+    <div class="about-text">
+      <p>Hi, I'm <strong>Siddharth Chobhe</strong>, Project Manager at ZS Associates and a certified Product Owner.</p>
 
-  <!-- Skills Section -->
-  <section id="skills" class="skills">
-    <h2>Core Skills</h2>
-    <ul>
-      <li>Project Management Tools: Jira, Microsoft Project, Excel</li>
-      <li>Cloud Computing: AWS EC2, S3, EBS, IAM</li>
-      <li>Programming: Python, Flask, MySQL</li>
-      <li>Data Visualization: Power BI</li>
-      <li>Version Control: Git & GitHub</li>
-    </ul>
-  </section>
+      <p>At ZS, I’ve successfully managed complex project portfolios, leading cross-functional teams while driving portfolio finance management and billing, contract lifecycle management, SLA and change management. My focus has always been on delivering business value with precision and agility, ensuring projects are aligned with organisational objectives and executed with transparency.</p>
 
-  <!-- Experience Section -->
-  <section id="experience" class="experience">
-    <h2>Work Experience</h2>
-    <ul>
-      <li>
-        <strong>Project Management Associate | ZS Associates</strong> (Nov 2023 – Present)<br>
-        Led end-to-end monthly financial billing for a diverse project portfolio, managed SOW lifecycle, and fostered transparent client relationships.
-      </li>
-    </ul>
-  </section>
+      <p>Over the past few months, I’ve been deepening my technical expertise by building hands-on projects in AWS Cloud, Python, Kubernetes, and Terraform. This technical fluency enables me to work seamlessly with engineering teams, automate processes, and design cloud-native solutions that are scalable, secure, and efficient.</p>
 
-  <!-- Articles Section -->
-  <section id="articles" class="articles">
-    <h2>My Medium Articles</h2>
-    <ul>
-      <li><a href="https://medium.com/@yourusername/aws-iam-policies" target="_blank">Understanding AWS IAM Policies</a></li>
-      <li><a href="https://medium.com/@yourusername/aws-ec2-overview" target="_blank">Deep Dive into AWS EC2 – Part 1</a></li>
-      <li><a href="https://medium.com/@yourusername/python-flask-mysql" target="_blank">Python Flask + MySQL Web App</a></li>
-    </ul>
-  </section>
+      <p>Alongside my work, I write in-depth Medium articles about AWS services, Python projects, and product management to share knowledge and contribute to the tech community.</p>
 
-  <!-- Footer / Contact -->
-  <footer id="contact">
-    <p>Connect with me</p>
-    <div class="links">
-      <a href="mailto:siddharth@example.com">Email</a> |
-      <a href="https://github.com/yourgithub" target="_blank">GitHub</a> |
-      <a href="https://www.linkedin.com/in/yourlinkedin" target="_blank">LinkedIn</a>
+      <h3>💻 Technical Skills</h3>
+      <ul>
+        <li>Cloud Platforms: AWS</li>
+        <li>CI/CD Pipelines: Jenkins, GitHub Actions, GitLab CI</li>
+        <li>DevOps Tools: Docker, Kubernetes, Terraform</li>
+        <li>Programming: Python</li>
+        <li>API Knowledge: REST, JSON, Postman</li>
+        <li>Databases: MySQL, DynamoDB, MongoDB</li>
+        <li>Version Control: Git (GitHub/GitLab/Bitbucket)</li>
+      </ul>
+
+      <h3>⚒️ Tools Expertise</h3>
+      <ul>
+        <li>Project Management: Jira, MS Project</li>
+        <li>Documentation: Notion, Confluence, Google Docs</li>
+        <li>Communication: Slack, Teams, Zoom, Outlook</li>
+        <li>Reporting & Dashboards: Power BI, Tableau, Excel (Advanced), Google Sheets, SharePoint</li>
+        <li>Design & UX: Figma | UI/UX Essentials</li>
+      </ul>
+
+      <h3>📜 Certifications</h3>
+      <ul>
+        <li>Certified Scrum Product Owner (CSPO®) – Scrum Alliance</li>
+        <li>Certified Scrum Master (CSM®) – Scrum Alliance</li>
+        <li>Figma UI/UX Design Essentials – Udemy</li>
+        <li>Google Analytics for Beginners – Google</li>
+        <li>Excel Skills for Business (Advanced) – Coursera</li>
+        <li>Agile with Atlassian Jira – Coursera</li>
+        <li>Agile Principles and Methodologies – Skillsoft</li>
+      </ul>
+
+      <h3>📢 Let’s Collaborate or Connect!</h3>
+      <p>
+        🔗 Medium: <a href="https://medium.com/@siddharthchobhe" target="_blank">medium.com/@siddharthchobhe</a><br>
+        🔗 GitHub Portfolio: <a href="https://github.com/sid-dev7" target="_blank">github.com/sid-dev7</a>
+      </p>
     </div>
-    <p>&copy; 2025 Siddharth Chobhe</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Siddharth Chobhe. All rights reserved.</p>
   </footer>
 </body>
 </html>
