@@ -19,22 +19,25 @@
       color: #333;
       line-height: 1.6;
       scroll-behavior: smooth;
+      overflow-x: hidden;
     }
 
+    /* Navbar */
     header {
       position: fixed;
       top: 0;
       width: 100%;
-      background: #1f2937;
+      background: rgba(31,41,55,0.95);
       color: white;
       padding: 1rem 0;
       z-index: 1000;
+      display: flex;
+      justify-content: center;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
 
     header nav {
       display: flex;
-      justify-content: center;
       gap: 30px;
     }
 
@@ -53,18 +56,18 @@
     /* Hero Section */
     .hero {
       display: flex;
-      align-items: center;
-      justify-content: space-between;
-      min-height: 100vh;
-      padding-top: 80px;
-      background: linear-gradient(to right, #f8fafc, #e2e8f0);
+      height: 100vh;
       overflow: hidden;
     }
 
     .hero-text {
       flex: 1;
       padding: 50px;
-      max-width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background: #f4f6f8;
+      animation: fadeInContent 2.5s ease forwards;
     }
 
     .hero-text h1 {
@@ -80,10 +83,9 @@
 
     .hero-image {
       flex: 1;
-      height: 100vh;
-      overflow: hidden;
+      height: 100%;
       opacity: 0;
-      animation: fadeIn 3s forwards;
+      animation: fadeInImage 3s forwards;
     }
 
     .hero-image img {
@@ -92,8 +94,13 @@
       object-fit: cover;
     }
 
-    @keyframes fadeIn {
+    @keyframes fadeInImage {
       to { opacity: 1; }
+    }
+
+    @keyframes fadeInContent {
+      0% {opacity: 0; transform: translateY(30px);}
+      100% {opacity: 1; transform: translateY(0);}
     }
 
     /* Social Icons */
@@ -127,6 +134,38 @@
       font-size: 2rem;
     }
 
+    /* About Section */
+    .about-text, .skills-content, .experience-content {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Skills */
+    .skills-content ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .skills-content li::before {
+      content: "\2022";
+      color: #38bdf8;
+      font-weight: bold;
+      display: inline-block;
+      width: 1em;
+    }
+
+    /* Experience */
+    .experience-item {
+      margin-bottom: 20px;
+    }
+
+    .experience-item h3 {
+      color: #2563eb;
+      margin-bottom: 5px;
+    }
+
     /* Medium Articles Carousel */
     .articles-carousel {
       display: flex;
@@ -144,6 +183,7 @@
       overflow: hidden;
       transition: transform 0.3s;
       text-align: center;
+      cursor: pointer;
     }
 
     .article-card:hover {
@@ -173,7 +213,6 @@
     @media(max-width: 900px) {
       .hero {
         flex-direction: column;
-        text-align: center;
       }
       .hero-text, .hero-image {
         max-width: 100%;
@@ -198,13 +237,13 @@
 
   <!-- Hero Section -->
   <section class="hero" id="hero">
-    <div class="hero-text" data-aos="fade-right">
+    <div class="hero-text">
       <h1>Siddharth Chobhe</h1>
       <p>Project Manager | Product Owner | AWS Enthusiast</p>
       <div class="social-icons">
         <a href="https://github.com/sid-dev7" target="_blank"><i class="fab fa-github"></i></a>
         <a href="https://twitter.com" target="_blank"><i class="fab fa-x-twitter"></i></a>
-        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://linkedin.com/in/siddharth-chobhe" target="_blank"><i class="fab fa-linkedin"></i></a>
         <a href="https://medium.com/@siddharthchobhe" target="_blank"><i class="fab fa-medium"></i></a>
       </div>
     </div>
@@ -216,45 +255,70 @@
   <!-- About Section -->
   <section id="about" data-aos="fade-up">
     <h2>About Me</h2>
-    <p>Hi, I'm <strong>Siddharth Chobhe</strong>, Project Manager at ZS Associates and a certified Product Owner.</p>
-    <p>At ZS, I’ve successfully managed complex project portfolios, leading cross-functional teams while driving portfolio finance management and billing, contract lifecycle management, SLA and change management. My focus has always been on delivering business value with precision and agility, ensuring projects are aligned with organisational objectives and executed with transparency.</p>
+    <div class="about-text">
+      <p>Technically adept Project Manager with 3.5 years of experience delivering client onboarding, configuration, and process automation projects. Skilled in managing SOWs, financials, and resource forecasting while driving efficiency through scripting (Python, VBA) and tool integration (Jira, MPP, SharePoint). Proven ability to streamline documentation, lead cross-functional teams, and support product enhancement through client feedback and platform optimization.</p>
+    </div>
   </section>
 
   <!-- Skills Section -->
   <section id="skills" data-aos="fade-up">
-    <h2>Technical Skills</h2>
-    <ul>
-      <li>Cloud Platforms: AWS</li>
-      <li>CI/CD Pipelines: Jenkins, GitHub Actions, GitLab CI</li>
-      <li>DevOps Tools: Docker, Kubernetes, Terraform</li>
-      <li>Programming: Python</li>
-      <li>API Knowledge: REST, JSON, Postman</li>
-      <li>Databases: MySQL, DynamoDB, MongoDB</li>
-      <li>Version Control: Git</li>
-    </ul>
+    <h2>Skills</h2>
+    <div class="skills-content">
+      <ul>
+        <li>Agile & Waterfall Project Management</li>
+        <li>SOW, Budget & Resource Management</li>
+        <li>Risk Mitigation & Stakeholder Communication</li>
+        <li>Python & VBA Automation</li>
+        <li>MS Project (MPP), Jira, Confluence, SharePoint</li>
+        <li>MS Office Suite: Excel, PowerPoint, Outlook, Teams</li>
+        <li>Figma for UI/UX Collaboration</li>
+      </ul>
+    </div>
   </section>
 
   <!-- Experience Section -->
   <section id="experience" data-aos="fade-up">
     <h2>Experience</h2>
-    <p>Currently working at ZS Associates as a Project Manager, managing complex project portfolios and driving cross-functional alignment to deliver value.</p>
+    <div class="experience-content">
+      <div class="experience-item">
+        <h3>ZS Associates - Project Management Associate</h3>
+        <p>Nov 2023 – Current</p>
+        <p>Led end-to-end monthly financial billing for a diverse project portfolio, managed SOW lifecycle, automated reporting with Python and VBA, and streamlined documentation processes.</p>
+      </div>
+      <div class="experience-item">
+        <h3>HCL Technologies - Senior Executive Project Management</h3>
+        <p>Aug 2021 – Jun 2023</p>
+        <p>Managed cross-functional teams and client relationships, handled HP to Cisco configuration projects, resource forecasting, and financial milestone tracking.</p>
+      </div>
+      <div class="experience-item">
+        <h3>Hundred Plus - Marketing Intern</h3>
+        <p>May 2020 – Jul 2020</p>
+        <p>Supported video production, handled 50+ customer accounts, and created content for email and social media campaigns.</p>
+      </div>
+    </div>
   </section>
 
   <!-- Articles Section -->
   <section id="articles" data-aos="fade-up">
     <h2>Medium Articles</h2>
     <div class="articles-carousel">
-      <div class="article-card">
-        <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*abc123.jpg" alt="AWS EC2">
+      <!-- Newly Added Kubernetes Article -->
+      <div class="article-card" onclick="window.open('https://medium.com/@siddharthchobhe/kubernetes-for-technical-project-managers-a-complete-beginner-to-intermediate-guide-38b559f78338','_blank')">
+        <img src="https://miro.medium.com/v2/resize:fit:4800/format:webp/0*WFcLNoAUD1oZ0fvi.png" alt="Kubernetes Guide">
+        <h3>Kubernetes for Technical Project Managers</h3>
+      </div>
+      <!-- Existing Articles -->
+      <div class="article-card" onclick="window.open('https://medium.com/@siddharthchobhe/aws-ec2-overview','_blank')">
+        <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*xyz.jpg" alt="AWS EC2">
         <h3>A Deep Dive into AWS EC2</h3>
       </div>
-      <div class="article-card">
-        <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/2*def456.jpg" alt="Python Flask">
-        <h3>Building APIs with Python Flask</h3>
+      <div class="article-card" onclick="window.open('https://medium.com/@siddharthchobhe/python-flask-mysql','_blank')">
+        <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/2*abc.jpg" alt="Python Flask">
+        <h3>Python Flask + MySQL Web App</h3>
       </div>
-      <div class="article-card">
-        <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/3*ghi789.jpg" alt="MySQL Guide">
-        <h3>MySQL Basics for Developers</h3>
+      <div class="article-card" onclick="window.open('https://medium.com/@siddharthchobhe/aws-iam-policies','_blank')">
+        <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/3*pqr.jpg" alt="AWS IAM Policies">
+        <h3>Understanding AWS IAM Policies</h3>
       </div>
     </div>
   </section>
@@ -262,8 +326,9 @@
   <!-- Contact Section -->
   <section id="contact" data-aos="fade-up">
     <h2>Contact</h2>
-    <p>Email: siddharth@example.com</p>
-    <p>Let's collaborate and build amazing products together!</p>
+    <p>Email: siddharthchobhe@gmail.com</p>
+    <p>Location: Pune, India</p>
+    <p>Phone: +91 9922948113</p>
   </section>
 
   <!-- Footer -->
